@@ -14,9 +14,6 @@
 	<a href="https://twitter.com/intent/follow?screen_name=eoscostarica">
 		<img src="https://img.shields.io/twitter/follow/eoscostarica.svg?style=social&logo=twitter" alt="follow on Twitter">
 	</a>
-	<a href="https://nodejs.org/en/blog/release/v8.0.0/">
-		<img src="https://img.shields.io/badge/node%20version-carbon-brightgreen.svg" alt="Node.js 8 - Carbon">
-	</a>
 	<a href="#">
 		<img src="https://img.shields.io/dub/l/vibe-d.svg" alt="MIT">
 	</a>
