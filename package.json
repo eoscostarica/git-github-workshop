@@ -1,0 +1,26 @@
+{
+  "name": "eos-git-github-workshop",
+  "version": "0.0.1",
+  "description": "Site for the Git, Github and Open Source Workshop by @eoscostarica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server",
+    "lint": "standard --verbose | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eoscostarica/git-github-workshop.git"
+  },
+  "author": "Gabo Esquivel <contact@gaboesquivel.com> (https://gaboesquivel.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eoscostarica/git-github-workshop/issues"
+  },
+  "homepage": "https://github.com/eoscostarica/git-github-workshop#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1"
+  }
+}
