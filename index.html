@@ -20,7 +20,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+  <div class="top-nav-bar d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
       <h5 class="my-0 mr-md-auto font-weight-normal">Git and OSS Workshop by EOS Costa Rica</h5>
 
       <nav class="nav nav-masthead justify-content-center">
@@ -29,14 +29,13 @@
      </nav>
     </div>
 
-    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <div class="banner-header">
       <img src="img/git-workshop-banner.png" width="100%">
     </div>
 
     <div class="container text-center">
       <h2>Attendants List</h2>
-
-      <div id="attendants-container">loading attedants data ...</div>
+      <div class="row" id="attendants-container">loading attedants data ...</div>
     </div>
 
     <footer class="container">
@@ -62,28 +61,22 @@
     </div>
   </div> -->
 
-
-
-
-
-
-
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
 
   <script id="attendant-template" type="text/x-handlebars-template">
-    <div class="col-md-3 col-sm-6 centered">
-      <img class="img img-circle" src="https://avatars.githubusercontent.com/{{github}}?s=120" height="120px" width="120px" alt="">
+    <div class="col-3 centered attendants-list">
+      <img class="img rounded" src="https://avatars.githubusercontent.com/{{github}}?s=120" height="120px" width="120px" alt="">
     <br>
     <h4><b>{{name}}</b></h4>
-    <p class="attendants-links">
-      {{#if website}}<a target="_blank" href="{{website}}">website <i class="fas fa-pencil-alt"></i></a>{{/if}}
-      {{#if twitter}}<a target="_blank" href="https://twitter.com/{{twitter}}">twitter <i class="fab fa-twitter"></i></a>{{/if}}
-      {{#if github}}<a target="_blank" href="https://github.com/{{github}}">github <i class="fab fa-github"></a>{{/if}}
-    </p>
+    <div class="attendants-links">
+      {{#if website}}<a target="_blank" class="social-link" href="{{website}}" title="website"><i class="fa fa-globe"></i></a> {{/if}}
+      {{#if twitter}}<a target="_blank" class="social-link" href="https://twitter.com/{{twitter}}" title="twitter "><i class="fa fa-twitter"></i></a> {{/if}}
+      {{#if github}}<a target="_blank" class="social-link" href="https://github.com/{{github}}" title="github"><i class="fa fa-github"></i></a>{{/if}}
+    </div>
     <br><br>
-    </div><!-- col-lg-3 -->
+    </div>
   </script>
 
   <script src="js/main.js"></script>
