@@ -1,0 +1,12 @@
+.top-nav-bar {
+	position: fixed;
+	width:100%;
+}
+
+.attendants-list {
+	padding: 20px;
+}
+.attendants-links a {
+	display: inline-block;
+    width: 25px;
+}
